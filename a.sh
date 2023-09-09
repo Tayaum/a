@@ -13,10 +13,13 @@ if [ $? -ne 0 ]; then
   exit
 fi
 
+# Prompt the user for username and password
+read -p "Enter username: " username
+read -sp "Enter password: " password
+echo
+
 # Set variables
 hostname="myarchvm"  # Replace with your desired hostname
-username="tayaum"
-password="tayaum"
 timezone="Asia/Singapore"
 
 # Partitioning the disk (assuming a single disk)
